@@ -58,7 +58,7 @@ jobs:
         context: ./
         file: ./Dockerfile/Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/cicd-test:tomcat_V4
+        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/cicd-test:tomcat_V5
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
